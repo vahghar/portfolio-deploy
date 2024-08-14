@@ -3,7 +3,7 @@ import React from 'react'
 import { Button } from './ui/moving-border'
 const Experience = () => {
   return (
-    <div className='py-5' id="experience">
+    <div className='py-5' id="achievements">
       <h1 className='heading'>
         My <span className='text-purple'> Achievements</span>
       </h1>

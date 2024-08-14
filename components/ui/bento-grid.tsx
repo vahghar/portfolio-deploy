@@ -1,7 +1,6 @@
 'use client'
 import { cn } from "@/utils/cn";
 import { BackgroundGradientAnimation } from "./background-gradient-animation";
-import { Globe } from "./globe";
 import { GlobeDemo } from "./GridGlobe";
 import { useState } from "react";
 import animationData from "@/data/confetti.json";
@@ -133,7 +132,7 @@ export const BentoGridItem = ({
                                 autoplay: copied,
                                 animationData: animationData,
                                 rendererSettings:{
-                                    presereAspectRatio:'xMidYMid slice'
+                                    preserveAspectRatio:'xMidYMid slice'
                                 }
                             }} />
                         </div>
