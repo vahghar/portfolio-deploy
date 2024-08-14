@@ -73,7 +73,7 @@ export const navItems = [
     {
       id: 1,
       title: "Create Memories",
-      des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
+      des: "A social platform for sharing memories, where users can post, view, and interact with articles, images, and personal stories.",
       img: "/p1.svg",
       iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
       link: "https://github.com/vahghar/memories",
@@ -81,7 +81,7 @@ export const navItems = [
     {
       id: 2,
       title: "Expense Tracker",
-      des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
+      des: "A simple app for managing finances, allowing users to track expenses, set budgets, and monitor spending habits effectively.",
       img: "/p2.svg",
       iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
       link: "https://github.com/vahghar/expenseTracker",
