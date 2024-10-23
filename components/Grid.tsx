@@ -1,4 +1,3 @@
-import { describe } from 'node:test'
 import React from 'react'
 import { BentoGridItem } from './ui/bento-grid'
 import { BentoGrid } from './ui/bento-grid'

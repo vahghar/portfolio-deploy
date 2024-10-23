@@ -11,7 +11,7 @@ export const navItems = [
       title: "I prioritize client collaboration, fostering open communication ",
       description: "",
       className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh] text-[2rem]",
-      imgClassName: "w-full h-full",
+      imgClassName: "w-full h-screen",
       titleClassName: "justify-end",
       img: "/b1.svg",
       spareImg: "",
@@ -49,8 +49,8 @@ export const navItems = [
   
     {
       id: 5,
-      title: "Currently working on a real world project",
-      description: "The Inside Scoop",
+      title: "Learning",
+      description: "I am currently learning how web3 works",
       className: "md:col-span-3 md:row-span-2 text-[1.2rem]",
       imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
       titleClassName: "justify-center md:justify-start lg:justify-center",
@@ -72,7 +72,7 @@ export const navItems = [
   export const projects = [
     {
       id: 1,
-      title: "Create Memories",
+      title: "Price Scraper",
       des: "A social platform for sharing memories, where users can post, view, and interact with articles, images, and personal stories.",
       img: "/p1.svg",
       iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
@@ -164,9 +164,9 @@ export const navItems = [
     },
     {
       id: 2,
-      title: "Front-end Intern at GrapplTech",
-      desc: "Designed and developed an Ecommerce website",
-      className: "md:col-span-2", // change to md:col-span-2
+      title: "Backend Developer at BridgeIn",
+      desc: "Worked on API functionality and designed it using Swagger",
+      className: "md:col-span-2", 
       thumbnail: "/exp2.svg",
     },
   ];

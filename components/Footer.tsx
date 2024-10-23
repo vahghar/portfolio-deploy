@@ -15,20 +15,21 @@ const Footer = () => {
             </h1>
             <p className='text-white-200 md:mt-10 my-5 text-center'>Reach out to me today!</p>
             <a href="mailto: raghav77g@gmail.com">
-                <MagicButton title='Lets get in touch' icon={<FaLocationArrow className='ml-2'/>}
+                <MagicButton otherClasses='cursor-pointer' title='Lets get in touch' icon={<FaLocationArrow className='ml-2'/>}
                 position='right'/>
             </a>
         </div>
         <div className='flex mt-16 md:flex-row flex-col justify-between items-center'>
             <p className='md:text-base text-sm md:font-normal'>Copyright @2024 Raghav</p>
-            <div className='flex items-cetner md:gap-3 gap-6'>
-                {socialMedia.map((profile)=>(
-                    <div key={profile.id} className='w-10 h-10 cursor-pointer flex justify-center items-center backdrop-filter backdrop-bluer-lg saturate-180 bg-opacity-75 bg-black-200 rounded-lg border border-black-300'>
-                        <img src={profile.img} width={20} height={20}/>
-                        <a href={profile.link}/>
+            <div className='flex items-center md:gap-3 gap-6'>
+            {socialMedia.map((profile) => (
+                <a key={profile.id} href={profile.link}>
+                    <div className='w-10 h-10 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-75 bg-black-200 rounded-lg border border-black-300'>
+                        <img src={profile.img} width={20} height={20} alt="lol" />
                     </div>
-                ))}
-            </div>
+                </a>
+            ))}
+        </div>
         </div>
     </footer>
   )
