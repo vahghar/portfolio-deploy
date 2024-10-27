@@ -8,6 +8,7 @@ import Lottie from "react-lottie";
 import MagicButton from "./MagicButton";
 import { IoCopyOutline } from "react-icons/io5";
 import { IconCloudDemo } from "../Techstack";
+import TypingAnimation from "./typing-animation";
 
 export const BentoGrid = ({
     className,
@@ -107,6 +108,12 @@ export const BentoGridItem = ({
                     <div className="flex gap-1 lg:gap-5 w-fit absolute -right-3 lg:-right-2">
                     </div>
                 )}
+
+                {id === 1 &&
+                    <div className="flex justify-start items-center w-full">
+                        <TypingAnimation text="#OpenToWork" duration={200} className="text-[2rem] text-white" />
+                    </div>
+                }
 
                 {id === 6 && (
                     <div className="mt-5 relative">

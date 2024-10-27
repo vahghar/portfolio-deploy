@@ -8,13 +8,8 @@ export const navItems = [
   export const gridItems = [
     {
       id: 1,
-      title: "I prioritize client collaboration, fostering open communication ",
-      description: "",
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Nulla facilisi. Phasellus euismod sapien et nulla suscipit, non ultricies urna varius. Aenean ac lacus et urna ultrices pharetra a sed justo. Curabitur sed felis eu odio congue sodales ac vitae dui.",
       className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh] text-[2rem]",
-      imgClassName: "w-full h-screen",
-      titleClassName: "justify-end",
-      img: "/b1.svg",
-      spareImg: "",
     },
     {
       id: 2,
@@ -153,7 +148,7 @@ export const navItems = [
   export const workExperience = [
     {
       id: 1,
-      title: "100+ Leetcode Questions Solved",
+      title: "150+ Leetcode Questions Solved",
       desc: "Really good with problem solving",
       className: "md:col-span-2",
       thumbnail: "/exp1.svg",

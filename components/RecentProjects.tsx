@@ -10,7 +10,7 @@ const RecentProjects = () => {
         <span className='text-purple'>Recent Projects</span>
       </h1>
       <div className='flex flex-wrap items-center justify-center p-4 gap-16 mt-2'>
-        {projects.map(({id,title,des,img,iconLists,link})=>(
+        {projects.map(({id,title,des,img,link})=>(
             <div key={id} className=' lg:min-h-[32.5rem] h-[25rem] flex items-center justify-center sm:w-96 w-[80vw]'>
                 <PinContainer title={title} href={link}>
                     <div className='relative flex items-center justify-center sm:w-96 w-[80vw] overflow-hidden h-[20vh] lg:h-[30vh] mb-10'>
@@ -19,7 +19,6 @@ const RecentProjects = () => {
                         </div>
                         <img src={img} alt={title} className='z-10 absolute bottom-0' />
                     </div>
-                    {/*line clamp means, it stays in the given number o flines only*/}
                     <h1 className='font-bold lg:text-2xl md:text-xl text-base line-clamp-1'>
                         {title}
                     </h1>
