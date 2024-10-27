@@ -72,8 +72,6 @@ export const BentoGridItem = ({
             </div>
         );
     }
-
-
     return (
         <div
             className={cn(
@@ -101,19 +99,28 @@ export const BentoGridItem = ({
                 <div className="font-sans font-bold text-neutral-600 dark:text-neutral-200 mb-2 mt-2">
                     {title}
                 </div>
+                <div className="w-full h-full absolute">
+                    {img && (
+                        <img
+                            src={img}
+                            alt={img}
+                            className={cn(imgClassName, "object-cover object-center ")}
+                        />
+                    )}
+                </div>
+
 
                 {id === 2 && <GlobeDemo />}
 
-                {id === 3 && (
-                    <div className="flex gap-1 lg:gap-5 w-fit absolute -right-3 lg:-right-2">
+                {id === 1 && (
+                    <div className="flex justify-start items-center w-full">
+                        <TypingAnimation
+                            texts={["Software Engineer", "#OpenToWork"]}
+                            duration={150}
+                            className="text-[2rem] text-white"
+                        />
                     </div>
                 )}
-
-                {id === 1 &&
-                    <div className="flex justify-start items-center w-full">
-                        <TypingAnimation text="#OpenToWork" duration={200} className="text-[2rem] text-white" />
-                    </div>
-                }
 
                 {id === 6 && (
                     <div className="mt-5 relative">

@@ -1,4 +1,5 @@
-export const navItems = [
+  
+  export const navItems = [
     { name: "About", link: "#about" },
     { name: "Projects", link: "#projects" },
     { name: "Achievements", link: "#achievements" },
@@ -44,9 +45,13 @@ export const navItems = [
   
     {
       id: 5,
+      title:"",
+      description:"",
       className: "md:col-span-3 md:row-span-2 text-[1.2rem]",
       imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
       titleClassName: "justify-center md:justify-start lg:justify-center",
+      img: "",
+      spareImg: "",
     },
     {
       id: 6,
