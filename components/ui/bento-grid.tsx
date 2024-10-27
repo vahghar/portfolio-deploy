@@ -60,18 +60,20 @@ export const BentoGridItem = ({
         return (
             <div
                 className={cn(
-                    "row-span-1 relative overflow-hidden rounded-3xl group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none border border-white/[0.1]",
+                    "row-span-1 relative flex items-center justify-center overflow-hidden rounded-3xl group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none border border-white/[0.1]",
                     className
                 )}
                 style={{
                     background: 'rgb(4, 7, 29)',
-                    backgroundColor: 'linear-gradient(90deg, rgba(4, 7, 29, 1) 0%, rgba(12, 14, 35, 1) 100%)'
+                    backgroundImage: 'linear-gradient(90deg, rgba(4, 7, 29, 1) 0%, rgba(12, 14, 35, 1) 100%)',
+                    minHeight: '200px' // Set a minimum height for visibility
                 }}
             >
                 <IconCloudDemo />
             </div>
         );
     }
+    
     return (
         <div
             className={cn(
