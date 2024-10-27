@@ -28,12 +28,12 @@ export const navItems = [
     },
     {
       id: 3,
-      title: "My tech stack",
-      description: "I constantly try to improve",
+      title: "Learning",
+      description: "I am currently trying to wrap my head around web3!",
       className: "lg:col-span-2 md:col-span-3 md:row-span-2 text-[1.2rem]",
       imgClassName: "",
       titleClassName: "justify-center",
-      img: "",
+      img: "/grid.svg",
       spareImg: "",
     },
     {
@@ -49,13 +49,9 @@ export const navItems = [
   
     {
       id: 5,
-      title: "Learning",
-      description: "I am currently learning how web3 works",
       className: "md:col-span-3 md:row-span-2 text-[1.2rem]",
       imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
       titleClassName: "justify-center md:justify-start lg:justify-center",
-      img: "/b5.svg",
-      spareImg: "/grid.svg",
     },
     {
       id: 6,
@@ -72,8 +68,8 @@ export const navItems = [
   export const projects = [
     {
       id: 1,
-      title: "Price Scraper",
-      des: "A social platform for sharing memories, where users can post, view, and interact with articles, images, and personal stories.",
+      title: "Content Sphere",
+      des: "A platform where streamers let their fans upload videos in queue and react to them.",
       img: "/p1.svg",
       iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
       link: "https://github.com/vahghar/memories",

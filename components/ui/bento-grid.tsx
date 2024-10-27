@@ -7,6 +7,7 @@ import animationData from "@/data/confetti.json";
 import Lottie from "react-lottie";
 import MagicButton from "./MagicButton";
 import { IoCopyOutline } from "react-icons/io5";
+import { IconCloudDemo } from "../Techstack";
 
 export const BentoGrid = ({
     className,
@@ -52,9 +53,25 @@ export const BentoGridItem = ({
     const [copied, setCopied] = useState(false);
     const handleCopy = () => {
         navigator.clipboard.writeText('raghav77g@gmail.com')
-
         setCopied(true);
     }
+    if (id === 5) {
+        return (
+            <div
+                className={cn(
+                    "row-span-1 relative overflow-hidden rounded-3xl group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none border border-white/[0.1]",
+                    className
+                )}
+                style={{
+                    background: 'rgb(4, 7, 29)',
+                    backgroundColor: 'linear-gradient(90deg, rgba(4, 7, 29, 1) 0%, rgba(12, 14, 35, 1) 100%)'
+                }}
+            >
+                <IconCloudDemo />
+            </div>
+        );
+    }
+
 
     return (
         <div
@@ -67,19 +84,6 @@ export const BentoGridItem = ({
                 backgroundColor: 'linear - gradient(90deg, rgba(4, 7, 29, 1) 0 %, rgba(12, 14, 35, 1) 100 %)'
             }}
         >
-            <div className={`${id === 6}&& flex justify-center'} h-full`}>
-                <div className="w-full h-full absolute">
-                    {img && (
-                        <img src={img} alt={img} className={cn(imgClassName, 'object-cover,object-center')} />
-                    )}
-                </div>
-            </div>
-
-            <div className={`absolute right-0 -bottom-5 ${id === 5 && 'w-full opacity-80'}`}>
-                {spareImg && (
-                    <img src={spareImg} alt={spareImg} className={cn(imgClassName, 'object-cover,object-center,w-full h-full')} />
-                )}
-            </div>
 
             {id === 6 && (
                 <BackgroundGradientAnimation>
@@ -99,26 +103,9 @@ export const BentoGridItem = ({
 
                 {id === 2 && <GlobeDemo />}
 
-                {id===3 && (
+                {id === 3 && (
                     <div className="flex gap-1 lg:gap-5 w-fit absolute -right-3 lg:-right-2">
-                        <div className="flex flex-col gap-3 lg:gap-8">
-                            {["React.js","Next.js","Javascript"].map((item)=>(
-                                <span key={item} className="py-2 lg:py-4 lg:px-3 px-3 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg bg-[#10132E]">
-                                    {item}
-                                </span>
-                            ))}
-                            <span className="py-4 px-3 rounded-lg text-center bg-[#10132e" />
-                        </div>
-                        <div className="flex flex-col gap-3 lg:gap-8">
-                        <span className="py-4 px-3 rounded-lg text-center bg-[#10132e"/>
-                            {["MongoDB","NodeJs","Express.js"].map((item)=>(
-                                <span key={item} className="py-2 lg:py-4 lg:px-3 px-3 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg bg-[#10132E]">
-                                    {item}
-                                </span>
-                            ))}
-                            
-                        </div>
-                    </div>  
+                    </div>
                 )}
 
                 {id === 6 && (
