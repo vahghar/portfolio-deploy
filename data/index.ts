@@ -70,9 +70,9 @@
       id: 1,
       title: "Content Sphere",
       des: "A platform where streamers let their fans upload videos in queue and react to them.",
-      img: "/p1.svg",
+      img: "/p3.svg",
       iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-      link: "https://github.com/vahghar/memories",
+      link: "https://github.com/vahghar/ContentSphere",
     },
     {
       id: 2,
